@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Timer Page {% endblock %}
+
+
+{% block body %}
+<h1>{{time}}</h1>
+
+<button type="button" class="btn btn-outline-dark">
+    <a href="{{url_for('countries')}}">Country List</a>
+</button>
+
+{% endblock %}
