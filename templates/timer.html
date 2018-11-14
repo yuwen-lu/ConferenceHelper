@@ -3,15 +3,46 @@
 
 
 {% block body %}
-<h1>{{time}}</h1>
+<h1 class="center" id="demo"></h1>
 
 <script>
+    //receive the countdown time from URL
     var countdown = {{ time }};
 
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        //get the minute and second 
+        var min = Math.floor(countdown / 60);
+        var sec = countdown - 60 * min;
+
+        // Output the result in an element with id="demo"
+
+        if (sec < 10) {
+            document.getElementById("demo").innerHTML = min + " : " + "0" + sec;
+        }
+        else {
+            document.getElementById("demo").innerHTML = min + " : " + sec;
+        }
+
+
+        // If the count down is over, write some text 
+        if (countdown < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        countdown -= 1;
+    }, 1000);
 </script>
 
-<button type="button" class="btn btn-outline-dark">
-    <a href="{{url_for('countries')}}">Country List</a>
-</button>
+<div class="center-button">
+    <button type="button" class="btn btn-outline-dark">
+        <a href="{{url_for('countries')}}">Country List</a>
+    </button>
+</div>
+
+<style>
+
+</style>
 
 {% endblock %}
