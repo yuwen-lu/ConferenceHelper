@@ -2,5 +2,23 @@
 {% block title %} Home Page {% endblock %}
 
 {% block body %}
+<br><br>
 <h1 id="greetings">Welcome to Conference Helper.</h1>
+
+<div class="buttons center-button">
+    <a href="{{url_for("countries")}}" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Start</a>
+</div>
+
+
+<style>
+    .buttons {
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: auto;
+    }
+
+    .bg-img {
+        background-image: url(/static/ga-hall.jpg);
+    }
+</style>
 {% endblock %}
