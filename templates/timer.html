@@ -5,6 +5,11 @@
 {% block body %}
 <h1>{{time}}</h1>
 
+<script>
+    var countdown = {{ time }};
+
+</script>
+
 <button type="button" class="btn btn-outline-dark">
     <a href="{{url_for('countries')}}">Country List</a>
 </button>

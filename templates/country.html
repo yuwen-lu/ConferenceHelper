@@ -13,10 +13,18 @@
 <ul>
     {% for country in country_list %}
 
-    <li><a href="{{ url_for('timer') }}">{{country}}</a></li>
+    <li class="country-list"><a href="{{ url_for('timer') }}">{{country}}</a></li>
 
     {% endfor %}
 
 </ul>
+
+<style>
+    .country-list {
+        list-style: none;
+        font-size: 150%
+    }
+</style>
+
 
 {% endblock %}
