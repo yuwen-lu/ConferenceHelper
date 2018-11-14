@@ -3,7 +3,7 @@
 
 
 {% block body %}
-<h1 class="center" id="demo"></h1>
+<h1 class="center time-countdown text-light" id="demo"></h1>
 
 <script>
     //receive the countdown time from URL
@@ -35,18 +35,27 @@
     }, 1000);
 </script>
 
-<div class="center-button">
-    <button type="button" class="btn btn-outline-dark">
+<div class="center center-button">
+    <button type="button" class="btn btn-outline-light">
         <a class="button-link" href="{{url_for('countries')}}">Country List</a>
     </button>
 </div>
 
 <style>
+    .center {
+        text-align: center;
+    }
+
+    .time-countdown {
+        padding-top: 13%;
+        font-size: 10em;
+    }
+
     .button-link:hover,
     .button-link:visited,
     .button-link:active {
         text-decoration: none;
-        color: #6c757d;
+        color: #ffffff;
 
     }
 </style>

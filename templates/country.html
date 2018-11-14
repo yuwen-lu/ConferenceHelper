@@ -4,7 +4,8 @@
 
 {% block body %}
 
-<div class="header">
+<div class="header text-light">
+    <br><br>
     <h1>Countries Present</h1>
 </div>
 
@@ -13,7 +14,7 @@
 <ul>
     {% for country in country_list %}
 
-    <li class="country-list"><a href="{{ url_for('timer') }}">{{country}}</a></li>
+    <li class="country-list"><a class="text-light" href="{{ url_for('timer') }}">{{country}}</a></li>
 
     {% endfor %}
 
