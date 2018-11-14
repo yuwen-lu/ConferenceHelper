@@ -2,19 +2,41 @@
 {% block title %} Home Page {% endblock %}
 
 {% block body %}
-<br><br>
-<h1 class="text-light" id="greetings">Welcome to Conference Helper.</h1>
-
-<div class="buttons center-button">
+<div class="greetings">
+    <br><br><br><br><br>
+    <h1 class="text-light greetings-small">Welcome to</h1>
+    <h1 class="text-light greetings-small"></h1>
+    <h1 class="text-light greetings-large">Conference Assistant</h1>
+</div>
+<div class="buttons">
     <a href="{{url_for("countries")}}" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Start</a>
+    <a href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Start</a>
 </div>
 
-
 <style>
+    .greetings {
+
+        text-align: center;
+    }
+
+    .greetings-small {
+        font-size: 2rem;
+    }
+
+    .greetings-large {
+        font-size: 5rem;
+    }
+
     .buttons {
         text-align: center;
         margin-top: 60px;
         margin-bottom: auto;
+    }
+
+    .buttons a {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: 20px;
     }
 
     .bg-img {

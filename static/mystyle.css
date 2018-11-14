@@ -17,12 +17,17 @@
     height: 100%;
   }
 
+  .layer {
+    background-color: rgba(41, 39, 39, 0.267)
+    z-index: -1;
+  }
+
   .bg-img {
     background-image: url(ga-hall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.6;
-    z-index: -1;
+    z-index: -2;
   }
   
 
@@ -33,7 +38,4 @@
     text-align: center;
   }
 
-  #greetings {
-      text-align: center;
-  }
 
