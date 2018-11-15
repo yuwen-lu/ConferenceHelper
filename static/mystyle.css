@@ -18,7 +18,7 @@
   }
 
   .layer {
-    background-color: rgba(41, 39, 39, 0.267)
+    background-color: rgba(41, 39, 39, 0.267);
     z-index: -1;
   }
 

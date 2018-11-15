@@ -9,8 +9,8 @@
     <h1 class="text-light greetings-large">Conference Assistant</h1>
 </div>
 <div class="buttons">
-    <a href="{{url_for("countries")}}" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Start</a>
-    <a href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Start</a>
+    <a href="{{url_for("countries")}}" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Log In</a>
+    <a href="#" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Sign Up</a>
 </div>
 
 <style>
@@ -41,6 +41,10 @@
 
     .bg-img {
         background-image: url(/static/ga-hall.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.6;
+        z-index: -2;
     }
 </style>
 {% endblock %}
