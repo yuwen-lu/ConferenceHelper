@@ -23,11 +23,7 @@
   }
 
   .bg-img {
-    background-image: url(ga-hall.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.6;
-    z-index: -2;
+    
   }
   
 
